@@ -1,26 +1,11 @@
-
-FVG’s IN FOREX TRADING 
-
-
-Aim of the Project:
-
-I am going to prepare a dsa210 project about the Fair Value Gaps in Forex Trading. Fair value gaps are commonly used by most of the trader as a smart Money concept which helps to predict price actions in both ways (bullish or bearish
+This project in Python analyzes Fair Value Gaps (FVGs) in major Forex currency pairs using data from Yahoo Finance. FVGs, defined by a three-candle structure, will be analyzed in both their bullish and bearish forms. The main research question of this review focuses on how frequently these FVGs are filled and how successful they are at predicting price continuation. Other aspects include whether there is a difference in the behavior of bullish and bearish FVGs, how gap size influences the fill probability, and whether FVGs created against the dominant market trend fill less frequently.
 
 
- Bullish FVG: A gap is formed at when the low of the third candle is higher than the high of the first candle.
 
- Bearish FVG: A gap is formed at when the high of the third candle is lower than the low of the first candle
+Data for pairs like the EUR/USD, GBP/USD, and USD/JPY will be collected over 30-minute, 1-hour, 4-hour, and 1-day timeframes over periods of six months to one year. Features like gap length, trend direction, volatility, liquidity zones, and time-to-fill will be extracted from the OHLC data. This will involve designing an algorithm that will detect FVGs; analyze the future price movement to determine whether the gaps fill completely, partially, or remain open; and gauge whether the identified FVGs correctly predict continued price movement in the expected direction. Comparison of fill rates, continuation accuracy, and behavior in various market conditions will be done through statistical analysis and visualizations. The project is guided by hypotheses that most FVGs will eventually fill, smaller gaps fill faster, higher-timeframe gaps are more reliable, and a valid FVG should correlate to price continuation in their respective direction.
 
 
-How we are going to approach ?
-
-This Project will gather data from the Yahoo Finance embedded in the Python. Different time intervals in different time periods will be considered. Thus the accuracy of the data analysis will rise.
-
-Witht the help of Yahoo Finance embedded in python i wil get the data of different currency pairs (EURUSD,GBPUSD,USDJPY, etc.) time intervals will be like 30m-1h-4h-1d in time periods of 6 months and 1 year.
-
-Also different timezones and different aspects will be accounted in the data analysis. Such as gap length of the fair value gaps and the liquidity zones near the fair value gaps. We will observe them too in order to make our analysis strong.
-
-Also we are going to observer how many percents of the fair value gaps will be filled and what is going to be to optimal fill rate in a fair value gap. On the other hand bullish fair value gap will be observed in counter bias position and bearish fair value gap will be observed in counter bias position.
+Overall, this project intends to present a more empirical view of the reliability of FVGs by comparing their fill rates against their efficiency in predicting future price continuation.
 
 
 
