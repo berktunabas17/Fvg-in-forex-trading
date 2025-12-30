@@ -6,8 +6,7 @@ In this project, I will use Python to analyze Fair Value Gaps (FVGs) in major Fo
 
 This project intends to present a more empirical view of the reliability of FVGs, moving beyond theoretical trading concepts to data-driven analysis. The findings will verify whether specific market conditions—such as gap size or dominant trend direction—influence the probability of a gap filling.
 
-Ultimately, this analysis will allow traders to distinguish between high-probability setups and market noise, testing the hypothesis that higher-timeframe gaps are more reliable and that valid FVGs correlate with price continuation.
-
+Ultimately, this analysis will allow traders to distinguish between high-probability setups and market noise, testing the hypothesis that if Fair Value Gaps are reasonable tools for the market price prediction.
 ## Description of Datasets
 
 I will be utilizing financial market data accessed via the Yahoo Finance API:
