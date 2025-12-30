@@ -32,4 +32,4 @@ I will be utilizing financial market data accessed via the Yahoo Finance API:
 ### Statistical Analysis and Visualization
 * **Fill Rate Analysis:** Comparing how gap size and trend alignment (dominant trend vs. counter-trend) affect fill probability.
 * **Continuation Accuracy:** Gauging whether identified FVGs correctly predict continued price movement in the expected direction.
-* **Hypothesis Testing:** Validating if smaller gaps fill faster and if higher-timeframe gaps offer higher reliability compared to lower timeframes.
+* **Hypothesis Testing:** if Fair Value Gaps are consistent tools for the market price prediction.
