@@ -11,7 +11,7 @@ Ultimately, this analysis will allow traders to distinguish between high-probabi
 
 I will be utilizing financial market data accessed via the Yahoo Finance API:
 
-**1. Forex OHLC Data (Yahoo Finance)**
+** Forex OHLC Data (Yahoo Finance)**
 * **Content:** Open, High, Low, and Close (OHLC) price data.
 * **Scope:** Major currency pairs including EUR/USD, GBP/USD, and USD/JPY.
 * **Timeframes:** Data will be collected across 30-minute, 1-hour and 4-hour intervals.
@@ -24,10 +24,20 @@ I will be utilizing financial market data accessed via the Yahoo Finance API:
 * Key features will be extracted from the OHLC data, including gap length and trend direction.
 * Also the mean, median, standart deviation, min and max of the price data will be calculated for each dataset
 
+### Technical Indicators & Data Processing
+ To provide context for every detected FVG, the project utilizes three core features:   
+* Relative Strength Index (RSI): Provides momentum context (e.g., overbought/oversold conditions).   
+* Average True Range (ATR): Normalizes gap size against market volatility and defines the "size" of successful moves.   
+* SMA Trend Alignment: Acts as a structural filter to determine if a gap matches the long-term trend (20, 50, 100, and 200 periods).
+
 ### Algorithm Design and Detection
 * An algorithm will be developed to detect valid FVG patterns (bullish and bearish three-candle structures).
 * The system will analyze future price movements using the ML methods to classify gaps as completely filled, partially filled, or remaining open.
 * Time-to-fill metrics will be calculated to gauge how quickly the market reacts to these gaps.
+  #### Machine Learning Modeling
+   Two Random Forest Classifier architectures were developed:  
+   * Binary Model: Acts as a "Gatekeeper" to predict the probability (0 or 1) of trend continuation.   
+   * Multiclass Model: Categorizes gaps into four structural classes (0–3) based on trend alignment and gap type (Bullish/Bearish).
 
 ### Statistical Analysis and Visualization
 * **Fill Rate Analysis:** Comparing how gap size and trend alignment (dominant trend vs. counter-trend) affect fill probability.
